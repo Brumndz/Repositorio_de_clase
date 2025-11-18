@@ -34,6 +34,11 @@ while True:
         elif opcion == '3':
             print(f"{num1} * {num2} = {multiplicar(num1, num2)}")
         elif opcion == '4':
-            print(f"{num1} / {num2} = {dividir(num1, num2)}")
+            try:
+                print(f"{num1} / {num2} = {dividir(num1, num2)}")
+            except ZeroDivisionError:
+                print("No se divide a 0")
         else:
-            print("Opción inválida. Por favor, intente de nuevo.")      
+            print("Opción inválida. Por favor, intente de nuevo.") 
+
+             
